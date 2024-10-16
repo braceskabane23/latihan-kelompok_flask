@@ -1,0 +1,5 @@
+Flask==2.3.3
+Flask-SQLAlchemy==2.5.1  # Jika menggunakan database
+Flask-Migrate==3.1.0  # Untuk migrasi database
+Flask-WTF==1.0.1  # Untuk formulir dan validasi
+Flask-Login==0.6.2  # Untuk manajemen login pengguna

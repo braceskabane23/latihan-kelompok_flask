@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Order</title>
+</head>
+<body>
+    <header>
+        <h1>Place Your Order</h1>
+    </header>
+    <main>
+        <form action="{{ url_for('order') }}" method="post">
+            <div>
+                <label for="order_details">Order Details:</label>
+                <textarea id="order_details" name="order_details" required></textarea>
+            </div>
+            <button type="submit">Submit Order</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Kelompok 3: 
+            ● Daud Firdo 
+            ● Dectrixie Theodore Mayumi Susanto 
+            ● Faris Rajendra Maulana 
+            ● Fransiska Rambu Yowa 
+            ● Laurens Fernando Pasaribu
+        </p>
+    </footer>    
+</body>
+</html>
